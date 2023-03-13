@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather API</title>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+    crossorigin="anonymous"
+  />
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="./Assets/Css/style.css">
+</head>
+<body>
+    <header class="p-5 mb-4 text-center border-bottom bg-dark">
+        <h1 >Weather Dashboard </h1>
+        <p id="currentDay" class="lead"></p>
+    </header>
+    
+    <div class="container">
+        <div class="row">
+            <aside class="col-md-3 pb-2 ">
+                <h2>Search a city:</h2>
+                <form action="">
+                    <input name="cityInput" id="cityInput" type="text" autofocus="true" class="form-input" />
+                    <button type="submit" class="btn text-center bg-dark" id="fetch-button">Search</button>
+                </form>
+                <div id="searchHistory" class="btn-group-vertical d-grid gap-2 col-3 ">
+                </div>
+            </aside>
+            <div class="col-md-9 pb-2">
+            <section id="current">
+                <h4 id="city"></h4>
+                <img id="icon" src="" alt=""></img>
+                <p id="temp"></p>
+                <p id="wind"></p>
+                <p id="humidity"></p>
+            </section>
+            <section id="5-dayForecast" class="row">
+                <h2>5-Day forecast</h2>
+                <div id="dayOne" class="col-md-2 m-2">
+                    <p id="dateDayOne"></p>
+                    <img id="iconDayOne" src="" alt=""></img>
+                    <p id="tempDayOne"></p>
+                    <p id="windDayOne"></p>
+                    <p id="humidityDayOne"></p>
+                </div>
+                <div id="dayTwo" class="col-md-2 m-2">
+                    <p id="dateDayTwo" ></p>
+                    <img id="iconDayTwo" src="" alt=""></img>
+                    <p id="tempDayTwo"></p>
+                    <p id="windDayTwo"></p>
+                    <p id="humidityDayTwo"></p>
+                </div>
+                <div id="dayThree" class="col-md-2 m-2">
+                    <p id="dateDayThree"></p>
+                    <img id="iconDayThree" src="" alt=""></img>
+                    <p id="tempDayThree"></p>
+                    <p id="windDayThree"></p>
+                    <p id="humidityDayThree"></p>
+                </div>
+                <div id="dayFour" class="col-md-2 m-2">
+                    <p id="dateDayFour"></p>
+                    <img id="iconDayFour" src="" alt=""></img>
+                    <p id="tempDayFour"></p>
+                    <p id="windDayFour"></p>
+                    <p id="humidityDayFour"></p>
+                </div>
+                <div id="dayFive" class="col-md-2 m-2">
+                    <p id="dateDayFive"></p>
+                    <img id="iconDayFive" src="" alt=""></img>
+                    <p id="tempDayFive"></p>
+                    <p id="windDayFive"></p>
+                    <p id="humidityDayFive"></p>
+                </div>
+            </section>
+            </div>
+        </div>
+    </div>
+    <script src="./Assets/Js/script.js"></script>
+</body>
+</html>
