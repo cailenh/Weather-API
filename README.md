@@ -5,7 +5,7 @@ This webpage was created to provide real-time weather data and forecasts. Jst ty
 
 ## Links
 
-- [Live](https://cailenh.github.io/My-Weather-API/)
+- [Live](https://cailenh.github.io/Weather-API/)
 
 ## Screenshots
 
